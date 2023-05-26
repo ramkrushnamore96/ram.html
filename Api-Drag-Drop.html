@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Drag-Drop</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .box {
+            background:whitesmoke;
+            width: 250px;
+            height: 200px;
+            margin: 10% auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid blue;
+            background: url(images/dogs.jpg);
+        }
+        .circle {
+            border-radius: 50%;
+            background: purple;
+            border: 5px solid black;
+            width:200px;
+            height: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <section id="box" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></section>
+  <section id="circle" class="circle" draggable="true" ondragstart="drag(event)"></section>
+
+  <script>
+    function allowDrop(event) { event.
+    preventDefault() }
+
+    function drag(event) {
+        event.dataTransfer.setData('text',event.target.id)
+    }
+
+    function drop(event) {
+        event.preventDefault()
+        let data = event.dataTransfer.getData
+        ('text')
+        event.target.appendChild(document.getElementById(data))
+    }
+  </script>
+</body>
+</html>

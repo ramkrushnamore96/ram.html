@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML - Table</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        td, th {
+            padding: 5px;
+            border:1px solid
+        }
+        th {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>vikas koli</td>
+            <td>vikaskoli1@gmail.com</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Sangram more</td>
+            <td>sangram1@gmail.com</td>
+            <td>Pimpri Chinchwad</td>
+        </tr>
+        <tr>
+            <td>sagar bansode</td>
+            <td>sagarbansode2@gmail.com</td>
+            <td>Nagpur</td>
+        </tr>
+        <tr>
+            <td>ramkrushna more</td>
+            <td>ramkrmore4142@gmail.com</td>
+            <td>Solapur</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Name and Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td rowspan="2">vikas koli</td>
+            <td>vikaskoli1@gmail.com</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>vikaskoli1g@gmail.com</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Sangram more</td>
+            <td>sangram1@gmail.com</td>
+            <td>Pimpri Chinchwad</td>
+        </tr>
+        <tr>
+            <td>sagar bansode</td>
+            <td>sagarbansode2@gmail.com</td>
+            <td>Nagpur</td>
+        </tr>
+        <tr>
+            <td>ramkrushna more</td>
+            <td>ramkrmore4142@gmail.com</td>
+            <td>Solapur</td>
+        </tr>
+    </table>
+    <table>
+        <colgroup>
+            <col span="2" style="background: rgba(128, 128, 240, 0.295);">
+            <col style="background: white;">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>vikas koli</td>
+            <td>vikaskoli1g@gmail.com</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Sangram more</td>
+            <td>sangram1@gmail.com</td>
+            <td>Pimpri Chinchwad</td>
+        </tr>
+        <tr>
+            <td>sagar bansode</td>
+            <td>sagarbansode2@gmail.com</td>
+            <td>Nagpur</td>
+        </tr>
+        <tr>
+            <td>ramkrushna more</td>
+            <td>ramkrmore4142@gmail.com</td>
+            <td>Solapur</td>
+        </tr>
+    </table>
+</body>

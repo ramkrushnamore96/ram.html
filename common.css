@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: fantasy;
+    min-height: 100vh;
+    background-color: goldenrod;
+}
+h4 {
+    margin: 0;
+}
+output {
+    display: block;
+    font: 700 1em/1.5 'system-ui';
+    margin: 1em auto;
+    border-radius: 4px;
+    background: #cfe2ff;
+    border: 1px solid #9ec5fe;
+    padding: 8px 16px;
+    min-height: 32px;
+}
+
+.button {
+    border: 0;
+    background: #cfe2ff;
+    border: 1px solid #9ec5fe;
+    padding: 4px 8px;
+    font: 400 1em/1.5 'system-ui';
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background: dodgerblue;
+}
+.wrapper {
+    margin: 16px;
+}

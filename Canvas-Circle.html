@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas-Circle</title>
+    <style>
+        body {
+            background: #1f8fff;
+        }
+        canvas {
+            background: white;
+            margin: 10% auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="200" height="200"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas')
+        let line = canvas.getContext('2d')
+        line.beginPath()
+        line.arc(100,100,50,0,7)
+        line.fillStyle = '#1f8fff'
+        line.lineWidth = 4
+        line.fill()
+        line.stroke()
+    </script>  
+</body>
+</html>
